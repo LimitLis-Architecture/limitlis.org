@@ -1,0 +1,160 @@
+---
+# LimitLis Methodology Module Registry
+# Version: 1.0
+# Last Updated: 2025-01-01
+# Purpose: Central registry of all methodology modules in the LimitLis ecosystem
+
+registry_version: "1.0"
+last_updated: "2025-01-01"
+total_modules: 4
+
+methodology_modules:
+  
+  # Core Business Framework
+  MM-RAAS:
+    name: "Ritual-as-a-Service (RaaS)"
+    version: "1.0"
+    category: "Monetization Framework"
+    status: "Active"
+    file_path: "methodology_modules/MM-RAAS.yaml"
+    description: "Hybrid monetization model combining SaaS, API, and ritual credit systems"
+    dependencies: ["MM-APM", "MM-SRT", "MM-NFE"]
+    created_date: "2025-01-01"
+    priority: "High"
+    tags: ["monetization", "saas", "api", "ritual", "hybrid-model"]
+
+  # Project Management Framework  
+  MM-APM:
+    name: "Agile Project Management"
+    version: "1.0"
+    category: "Project Management"
+    status: "Active"
+    file_path: "methodology_modules/MM-APM.yaml"
+    description: "Symbolic interpretation and application of agile methodologies"
+    dependencies: ["MM-SRT"]
+    created_date: "2025-01-01"
+    priority: "High"
+    tags: ["agile", "project-management", "workflows", "team-coordination"]
+    integration_points:
+      - "Strategic planning rituals"
+      - "Sprint ceremony automation"
+      - "Progress tracking protocols"
+      - "Team alignment frameworks"
+
+  # Symbolic Reasoning Framework
+  MM-SRT:
+    name: "Symbolic Reasoning Tools"
+    version: "1.0"
+    category: "AI Integration"
+    status: "Active"
+    file_path: "methodology_modules/MM-SRT.yaml" 
+    description: "Core symbolic reasoning capabilities for AI-human collaboration"
+    dependencies: []
+    created_date: "2025-01-01"
+    priority: "Critical"
+    tags: ["symbolic-reasoning", "ai", "patterns", "meaning-generation"]
+    integration_points:
+      - "Natural language processing enhancement"
+      - "Pattern recognition and storage"
+      - "Symbolic prompt engineering"
+      - "Narrative generation frameworks"
+
+  # NFT Framework
+  MM-NFE:
+    name: "NFT Framework Engineering"
+    version: "1.0"
+    category: "Blockchain Integration"
+    status: "Active"
+    file_path: "methodology_modules/MM-NFE.yaml"
+    description: "Blockchain-based verification and monetization of ritual outcomes"
+    dependencies: ["MM-SRT"]
+    created_date: "2025-01-01"
+    priority: "Medium"
+    tags: ["nft", "blockchain", "verification", "credentials", "tokenization"]
+    integration_points:
+      - "Ritual completion certificates"
+      - "Achievement verification systems"
+      - "Community reputation tracking"
+      - "Digital asset marketplace"
+
+# Registry Metadata
+registry_structure:
+  categories:
+    - "Monetization Framework"
+    - "Project Management" 
+    - "AI Integration"
+    - "Blockchain Integration"
+    - "Community Engagement"
+    - "Symbolic Operations"
+
+  status_types:
+    - "Active": "Production-ready and actively maintained"
+    - "Beta": "Testing phase, limited deployment"
+    - "Deprecated": "No longer maintained, use alternatives"
+    - "Development": "In development, not yet released"
+
+  priority_levels:
+    - "Critical": "Core infrastructure components"
+    - "High": "Important for primary functionality"
+    - "Medium": "Valuable but not essential"
+    - "Low": "Nice-to-have features"
+
+# Cross-Integration Matrix
+integration_matrix:
+  MM-RAAS:
+    integrates_with: ["MM-APM", "MM-SRT", "MM-NFE"]
+    provides_to: ["Monetization framework", "Service delivery model"]
+    consumes_from: ["Project management workflows", "Symbolic reasoning", "NFT generation"]
+
+  MM-APM:
+    integrates_with: ["MM-RAAS", "MM-SRT"]
+    provides_to: ["Project management frameworks", "Team coordination protocols"]
+    consumes_from: ["Symbolic reasoning", "Monetization framework"]
+
+  MM-SRT:
+    integrates_with: ["MM-RAAS", "MM-APM", "MM-NFE"]
+    provides_to: ["Symbolic reasoning capabilities", "Pattern recognition", "Meaning generation"]
+    consumes_from: []
+
+  MM-NFE:
+    integrates_with: ["MM-RAAS", "MM-SRT"]
+    provides_to: ["Blockchain verification", "Digital asset creation", "Community reputation"]
+    consumes_from: ["Symbolic reasoning", "Monetization framework"]
+
+# Usage Guidelines
+implementation_guidelines:
+  development:
+    - "All MMs must follow YAML schema defined in MM-RAAS template"
+    - "Dependencies must be explicitly declared and documented"
+    - "Integration points must be clearly specified"
+    - "Version control follows semantic versioning (major.minor.patch)"
+
+  deployment:
+    - "Active status requires full testing and documentation"
+    - "Cross-integrations must be validated before production deployment"
+    - "Registry updates require council review for critical/high priority modules"
+
+  deprecation:
+    - "6-month notice required for deprecating active modules"
+    - "Migration path must be provided for deprecated modules"
+    - "Dependencies must be updated before deprecation"
+
+# Future Expansion
+planned_modules:
+  MM-CEG:
+    name: "Community Engagement"
+    description: "Frameworks for building and maintaining symbolic communities"
+    priority: "High"
+    target_date: "Q2 2025"
+
+  MM-DAV:
+    name: "Data Analytics & Visualization"
+    description: "Symbolic data analysis and visualization frameworks"
+    priority: "Medium" 
+    target_date: "Q3 2025"
+
+  MM-EDU:
+    name: "Educational Frameworks"
+    description: "Learning and teaching methodologies for symbolic operations"
+    priority: "Medium"
+    target_date: "Q4 2025"
