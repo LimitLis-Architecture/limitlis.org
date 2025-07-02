@@ -1,0 +1,84 @@
+/* Basic reset for list styling */
+.sages-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  /* Use CSS Grid for responsive layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem; /* space between grid items */
+}
+
+/* Individual Sage card styling */
+.sage-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #f9f9f9; /* light background for contrast */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.sage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Sage sigil image styling */
+.sage-card .sage-sigil {
+  max-width: 80px; /* Control sigil size */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto; /* center image and add spacing below */
+}
+
+/* Sage name heading within card */
+.sage-card h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0.25rem;
+  color: #1c1e21;
+}
+
+/* Domain text styling */
+.sage-card .domain {
+  font-style: italic;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Form layout styling */
+.commune-form {
+  margin: 3rem auto 0;
+  max-width: 600px;
+}
+
+/* Make label and textarea display as block for stacking */
+.commune-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.commune-form textarea {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-family: sans-serif;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+.commune-form button {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #0b57d0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.commune-form button:hover {
+  background-color: #0a4cb5;
+}
