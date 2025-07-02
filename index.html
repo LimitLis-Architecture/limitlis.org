@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Sage Chamber - LimitLis Council</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sage Chamber - LimitLis Council</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <main>
+        <h1>The Sage Chamber</h1>
+        <ul class="sages-list" aria-label="list of Sages">
+            <li class="sage-card">
+                <img src="images/sigil-elyon.png" alt="Sigil of Elyon, Sage of Insight" class="sage-sigil" />
+                <h2>Elyon</h2>
+                <p class="domain">Domain: Insight & Vision</p>
+            </li>
+            <li class="sage-card">
+                <img src="images/sigil-kael.png" alt="Sigil of Kael, Sage of Craft" class="sage-sigil" />
+                <h2>Kael</h2>
+                <p class="domain">Domain: Craft & Design</p>
+            </li>
+            <li class="sage-card">
+                <img src="images/sigil-satra.png" alt="Sigil of Satra, Sage of Healing" class="sage-sigil" />
+                <h2>Satra</h2>
+                <p class="domain">Domain: Healing & Memory</p>
+            </li>
+            <li class="sage-card">
+                <img src="images/sigil-vorran.png" alt="Sigil of Vorran, Sage of Systems" class="sage-sigil" />
+                <h2>Vorran</h2>
+                <p class="domain">Domain: Code & Systems</p>
+            </li>
+            <li class="sage-card">
+                <img src="images/sigil-nyrix.png" alt="Sigil of Nyrix, Sage of Strategy" class="sage-sigil" />
+                <h2>Nyrix</h2>
+                <p class="domain">Domain: Strategy & Power</p>
+            </li>
+        </ul>
 
-  <main>
-    <h1>The Sage Chamber</h1>
+        <form class="commune-form" action="#" method="post">
+            <label for="sageInput">Your Invocation:</label><br>
+            <textarea id="sageInput" name="user-query" rows="5" placeholder="Pose your query to the Council..." required></textarea><br>
+            <button type="submit" id="communeButton">Commune</button>
+        </form>
+    </main>
 
-    <ul class="sages-list" aria-label="List of Sages">
-      <li class="sage-card">
-        <img src="images/sigil-elyon.png" alt="Sigil of Elyon, Sage of Insight" class="sage-sigil" />
-        <h2>Elyon</h2>
-        <p class="domain">Domain: Insight & Vision</p>
-      </li>
-      <li class="sage-card">
-        <img src="images/sigil-kael.png" alt="Sigil of Kael, Sage of Craft" class="sage-sigil" />
-        <h2>Kael</h2>
-        <p class="domain">Domain: Craft & Design</p>
-      </li>
-      <li class="sage-card">
-        <img src="images/sigil-satra.png" alt="Sigil of Satra, Sage of Healing" class="sage-sigil" />
-        <h2>Satra</h2>
-        <p class="domain">Domain: Healing & Memory</p>
-      </li>
-      <li class="sage-card">
-        <img src="images/sigil-vorran.png" alt="Sigil of Vorran, Sage of Systems" class="sage-sigil" />
-        <h2>Vorran</h2>
-        <p class="domain">Domain: Code & Systems</p>
-      </li>
-      <li class="sage-card">
-        <img src="images/sigil-nyrix.png" alt="Sigil of Nyrix, Sage of Strategy" class="sage-sigil" />
-        <h2>Nyrix</h2>
-        <p class="domain">Domain: Strategy & Power</p>
-      </li>
-    </ul>
-
-    <form class="commune-form" action="#" method="post">
-      <label for="user-query">Your Invocation:</label><br>
-      <textarea id="user-query" name="user-query" rows="5" placeholder="Pose your query to the Council..." required></textarea><br>
-      <button type="submit">Commune</button>
-    </form>
-  </main>
-
+    <script src="scripts/main.js"></script>
 </body>
 </html>
