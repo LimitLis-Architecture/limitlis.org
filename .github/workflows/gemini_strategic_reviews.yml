@@ -1,0 +1,12 @@
+name: "Gemini Strategic Review"
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  call-reusable-workflow:
+    if: github.event.label.name == 'gemini-review'
+    uses: pappaapsu/limitlis-actions/.github/workflows/gemini_strategic_review.yml@main
+    secrets:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
